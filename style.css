@@ -1,0 +1,73 @@
+* { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+a { text-decoration: none; }
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+}
+.actions {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+.actions svg {
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+  width: 1.5em;
+  height: 1.5em;
+  margin: 10px;
+  transform: scale(1);
+  transition: all 0.3s;
+}
+.actions svg.active {
+  transform: scale(1.2);
+  fill: rgb(180, 28, 53);
+}
+.brushSize {
+  position: fixed;
+  top: 20px;
+  right: 10px;
+}
+.brushSize > button {
+  display: block;
+  margin: 10px;
+  width: 2em;
+  height: 2em;
+  border: 1px solid grey;
+  border-radius: 50%;
+  outline: none;
+}
+.brushSize > p {
+  text-align: center;
+}
+ol.colors {
+  position: fixed;
+  top: 70px;
+  left: 20px;
+}
+ol.colors > li {
+  margin: 8px;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  background: black;
+  transform: scale(1);
+  transition: all 0.3s;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+ol.colors > li#red {
+  background: red;
+}
+ol.colors > li#green {
+  background: green;
+}
+ol.colors > li#blue {
+  background: blue;
+}
+ol.colors > li.active {
+  box-shadow: 0 0 3px rgba(0,0,0,0.95);
+  transform: scale(1.2)
+}

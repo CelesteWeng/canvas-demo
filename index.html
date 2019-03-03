@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>WENG 的画板</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <canvas id="drawingBoard" width=300 height=300></canvas>
+  <div class="actions">
+      <svg id="pen" class="icon active" aria-hidden="true">
+        <use xlink:href="#icon-pen"></use>
+      </svg>
+      <svg id="eraser" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-eraser"></use>
+      </svg>
+      <svg id="clear" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-delete"></use>
+      </svg>
+      <svg id="download" class="icon" aria-hidden="true">
+        <use xlink:href="#icon-download"></use>
+      </svg>
+  </div>
+
+  <ol id='colors' class="colors">
+    <li id='black' class="active"></li>
+    <li id='red' class=""></li>
+    <li id='green' class=""></li>
+    <li id='blue' class=""></li>
+  </ol>
+
+  <div class="brushSize">
+    <button id="thin">细</button>
+    <p id="penWidth"></p>
+    <button id="thick">粗</button>
+  </div>
+  <script src="./main.js"></script>
+  <script src="//at.alicdn.com/t/font_1068272_smxzsx9ftn.js"></script>
+</body>
+
+</html>
