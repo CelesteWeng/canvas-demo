@@ -4,7 +4,7 @@ var beginPoint = null
 var points = []
 var using = false
 var eraserEnabled = false
-var touchEnabled = Boolean('ontouchstart' in document.body)
+var touchEnabled = !!('ontouchstart' in document.body)
 console.log('你想被摸: ', touchEnabled)
 var lineWidth = 5
 penWidth.textContent = lineWidth
